@@ -1,3 +1,36 @@
+# IMPORTANT! Read me first!  Update 11/7/2023
+
+The original scripts did not take into account the ConfigurationMechanism and UefiVersion.  Microsoft changed from V2 to V3.  Only V2 configuration files will work with V2 UEFI and only V3 configuration files will work with V3 UEFI.  This led to the generation and application scripts being completely reworked on our end.  At the moment, I do not have time to go through and cleanse the re-written scripts of company data so that they can be shared with the public.  If you are struggling to implement SEMM to a mixed environment and need help, feel free to reach out to me and I can do what I can to assist.  
+
+| Model | UefiVersion |
+| ------------- | ------------- |
+| Surface Book | V2 |
+| Surface Book 2 | V2 |
+| Surface Book 3 | V2 |
+| Surface Go | V2 |
+| Surface Go 2 | V2 |
+| Surface Go 3 | V3 |
+| Surface Hub 2S | V3 |
+| Surface Laptop | V2 |
+| Surface Laptop 2 | V2 |
+| Surface Laptop 3 | V2 |
+| Surface Laptop 4 | V2 |
+| Surface Laptop 5 | V3 |
+| Surface Laptop Go | V2 |
+| Surface Laptop Go 2 | V3 |
+| Surface Laptop SE | V3 |
+| Surface Laptop Studio | V3 |
+| Surface Pro | V2 |
+| Surface Pro 4 | V2 |
+| Surface Pro 6 | V2 |
+| Surface Pro 7 | V2 |
+| Surface Pro 7+ | V2 |
+| Surface Pro 8 | V3 |
+| Surface Pro 9 | V3 |
+| Surface Studio | V2 |
+| Surface Studio 2 | V2 |
+| Surface Studio 2+ | V3 |
+
 # Implementing Microsoft Surface Enterprise Management Mode (SEMM)
 
 We've been deploying Surface products since the original Surface Pro and we've always wanted to lock down the UEFI with a password programmatically while allowing the technician to change settings if they knew the password.  Microsoft made it challenging so I've always gotten close but never completed it.  I finally got it figured out and wanted to share my scripts and findings because there's so little out there to help folks. 
